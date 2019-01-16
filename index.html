@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>BOT Infographic</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./js/countup.min.js"></script>
+</head>
+
+<body>
+  <div id="infographic-container">
+    <img id="background-image" src="assets/background.jpg" alt="The background image" />
+    <div class="info-box" id="surgeries">
+      <h3 id="surgeries-value">0</h3>
+      <caption>surgeries</caption>
+    </div>
+
+    <div class="info-box" id="births">
+      <h3 id="births-value">0</h3>
+      <caption>births</caption>
+    </div>
+
+    <div class="info-box" id="inpatient-days">
+      <h3 id="inpatient-days-value">0</h3>
+      <caption>inpatient days</caption>
+    </div>
+
+    <div class="info-box" id="residential-care-clients">
+      <h3 id="residential-care-clients-value">0</h3>
+      <caption>residential care clients</caption>
+    </div>
+
+    <ul id="site-buttons">
+      <li class="site-button" data-site="vancouver">VANCOUVER</li>
+      <li class="site-button" data-site="richmond">RICHMOND</li>
+      <li class="site-button" data-site="coastal">COASTAL</li>
+    </ul>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
