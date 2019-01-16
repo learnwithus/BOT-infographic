@@ -20,6 +20,7 @@ function browserSyncReload(done) {
 function watchFiles() {
   gulp.watch("./scss/**/*", processSass);
   gulp.watch("./js/**/*", browserSyncReload);
+  gulp.watch("./index.html", browserSyncReload);
 }
 
 function processSass() {

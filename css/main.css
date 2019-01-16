@@ -69,6 +69,7 @@ body {
 
 #infographic-container .info-box {
   position: absolute;
+  max-width: 8rem;
   padding: 1rem 2rem;
   background: #FFF;
   color: orangered;
@@ -112,4 +113,34 @@ body {
 #residential-care-clients {
   top: 10%;
   left: 65%;
+}
+
+#home-support-clients {
+  top: 10%;
+  left: 85%;
+}
+
+#home-support-visits {
+  top: 24%;
+  left: 85%;
+}
+
+#home-care-nursing-visits {
+  top: 38%;
+  left: 85%;
+}
+
+#home-care-rehab-visits {
+  top: 54%;
+  left: 85%;
+}
+
+#mental-health-inpatient-visits {
+  top: 32%;
+  left: 46%;
+}
+
+#emergency-department-visits {
+  top: 58%;
+  left: 33%;
 }
