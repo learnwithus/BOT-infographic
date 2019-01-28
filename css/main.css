@@ -75,7 +75,7 @@ body {
   color: orangered;
   text-align: center;
   border-radius: 1em;
-  box-shadow: 0px 5px 15px #888888;
+  box-shadow: 0 5px 15px #888888;
 }
 
 #infographic-container .info-box h3 {
@@ -146,10 +146,10 @@ body {
 }
 
 .svg-smoke {
-  transform: scale(0.5);
   position: absolute;
   animation: svg-smoke 10s infinite;
   animation-timing-function: ease-in-out;
+  width: 4vw;
 }
 
 .svg-smoke .shape {
@@ -157,8 +157,8 @@ body {
 }
 
 #svg-smoke-1 {
+  left: 50%;
   bottom: 15%;
-  left: 39%;
 }
 
 #svg-smoke-2 {
@@ -180,6 +180,6 @@ body {
   }
   100% {
     opacity: 0;
-    transform: scale(0.5) translateY(2rem);
+    transform: translateY(-2rem);
   }
 }
