@@ -1,135 +1,136 @@
 @import 'reset.scss';
 
 body {
-  font-family: sans-serif;
+	font-family: sans-serif;
 }
 
 #infographic-container {
-  width: 100%;
-  // background-color: #FFF;
-  position: relative;
-  // background-image: url("../assets/background.jpg");
-  // background-size: cover;
-  // background-position: center center;
+	width: 100%;
+	// background-color: #FFF;
+	position: relative;
+	// background-image: url("../assets/background.jpg");
+	// background-size: cover;
+	// background-position: center center;
+	#background-image {
+		display: block;
+		width: 100%;
+		// height: 100%;
+		max-width: 100%;
+	}
 
-  #background-image {
-    display: block;
-    width: 100%;
-    // height: 100%;
-    max-width: 100%;
-  }
+	.info-box {
+		h3 {
+			font-size: 2em;
+			font-weight: 700;
+		}
+		position: absolute;
+		max-width: 8rem;
+		padding: 1rem 2rem;
+		background: #FFF;
+		color: orangered;
+		text-align: center;
+		border-radius: 1em;
+		box-shadow: 0 5px 15px #888888;
+	}
 
-  .info-box {
-    h3 {
-      font-size: 2em;
-      font-weight: 700;
-    }
-    position: absolute;
-    max-width: 8rem;
-    padding: 1rem 2rem;
-    background: #FFF;
-    color: orangered;
-    text-align: center;
-    border-radius: 1em;
-    box-shadow: 0px 5px 15px #888888;
-  }
+	#site-buttons {
+		position: absolute;
+		bottom: 3rem;
+		left: 2rem;
+		font-size: 1.3rem;
+		font-weight: 600;
 
-  #site-buttons {
-    position: absolute;
-    bottom: 3rem;
-    left: 2rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-
-    li {
-      margin: 0.2rem 0;
-    }
-  }
+		li {
+			margin: 0.2rem 0;
+		}
+	}
 }
 
 #surgeries {
-  top: 21%;
-  left: 11%;
+	top: 21%;
+	left: 11%;
 }
 
 #births {
-  top: 13%;
-  left: 52%;
+	top: 13%;
+	left: 52%;
 }
 
 #inpatient-days {
-  top: 70%;
-  left: 3%;
+	top: 70%;
+	left: 3%;
 }
 
 #residential-care-clients {
-  top: 10%;
-  left: 65%;
+	top: 10%;
+	left: 65%;
 }
 
 #home-support-clients {
-  top: 10%;
-  left: 85%;
+	top: 10%;
+	left: 85%;
 }
 
 #home-support-visits {
-  top: 24%;
-  left: 85%;
+	top: 24%;
+	left: 85%;
 }
 
 #home-care-nursing-visits {
-  top: 38%;
-  left: 85%;
+	top: 38%;
+	left: 85%;
 }
 
 #home-care-rehab-visits {
-  top: 54%;
-  left: 85%;
+	top: 54%;
+	left: 85%;
 }
 
 #mental-health-inpatient-visits {
-  top: 32%;
-  left: 46%;
+	top: 32%;
+	left: 46%;
 }
 
 #emergency-department-visits {
-  top: 58%;
-  left: 33%;
+	top: 58%;
+	left: 33%;
 }
 
 .svg-smoke {
-  transform: scale(0.5) ;
-  position: absolute;
-  animation: svg-smoke 10s infinite;
-  animation-timing-function: ease-in-out;
-  .shape {
-    fill: #fff;
-  }
+	position: absolute;
+	animation: svg-smoke 10s infinite;
+	animation-timing-function: ease-in-out;
+  width: 4vw;
+	.shape {
+		fill: #fff;
+	}
 }
 
 #svg-smoke-1 {
-  bottom: 15%;
-  left: 39%;
+	left: 50%;
+	bottom: 15%;
 }
 
 #svg-smoke-2 {
-  bottom: 65%;
-  left: 70%;
-  animation: svg-smoke 20s infinite;
-  .shape {
-    fill: #ddd;
-  }
-}
+	bottom: 65%;
+	left: 70%;
+	animation: svg-smoke 20s infinite;
 
+	.shape {
+		fill: #ddd;
+	}
+}
 @keyframes svg-smoke {
-  0%   {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
+	0% {
+		opacity: 0;
+	}
 
-  }
-  100%   { opacity: 0;
-    transform: scale(0.5)  translateY(2rem);
-}
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
 }
