@@ -166,7 +166,7 @@ body {
 }
 
 .svg-smoke path {
-  fill: #ffbcf0;
+  fill: #ffbcfa;
 }
 
 #svg-smoke-1 {
@@ -176,12 +176,19 @@ body {
 
 #svg-smoke-2 {
   left: 70%;
-  top: 75%;
+  top: 70%;
   animation: svg-smoke 20s infinite;
 }
 
-#svg-smoke-2 .shape {
-  fill: #ddd;
+#svg-smoke-3 {
+  left: 38%;
+  top: 87%;
+  animation: svg-smoke 30s infinite;
+}
+
+#svg-smoke-4 {
+  left: 81%;
+  top: 83%;
 }
 
 @keyframes svg-smoke {

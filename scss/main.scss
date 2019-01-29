@@ -115,7 +115,7 @@ body {
 	animation-timing-function: ease-in-out;
   width: 4vw;
 	path {
-		fill: rgba(	255, 188, 240, 1);
+		fill: rgba(	255, 188, 250, 1);
 	}
 }
 
@@ -126,13 +126,21 @@ body {
 
 #svg-smoke-2 {
 	left: 70%;
-  top: 75%;
+  top: 70%;
 	animation: svg-smoke 20s infinite;
-
-	.shape {
-		fill: #ddd;
-	}
 }
+
+#svg-smoke-3 {
+	left: 38%;
+  top: 87%;
+	animation: svg-smoke 30s infinite;
+}
+
+#svg-smoke-4 {
+	left: 81%;
+	top: 83%;
+}
+
 @keyframes svg-smoke {
 	0% {
 		opacity: 0;
