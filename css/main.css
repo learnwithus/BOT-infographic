@@ -54,17 +54,30 @@ table {
 
 body {
   font-family: sans-serif;
+  background-color: #c1d830;
 }
 
 #infographic-container {
-  width: 100%;
-  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
-#infographic-container #background-image {
-  display: block;
+#infographic-container #background {
+  position: absolute;
   width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+}
+
+#infographic-container #background #image {
   max-width: 100%;
+  max-height: 99vh;
 }
 
 #infographic-container .info-box {
@@ -152,6 +165,7 @@ body {
   width: 4vw;
 }
 
+<<<<<<< HEAD
 .svg-smoke .shape {
   fill: #fff;
 }
@@ -169,6 +183,32 @@ body {
 
 #svg-smoke-2 .shape {
   fill: #ddd;
+=======
+.svg-smoke path {
+  fill: #ffbcfa;
+}
+
+#svg-smoke-1 {
+  left: 49%;
+  top: 78%;
+}
+
+#svg-smoke-2 {
+  left: 70%;
+  top: 70%;
+  animation: svg-smoke 20s infinite;
+}
+
+#svg-smoke-3 {
+  left: 38%;
+  top: 87%;
+  animation: svg-smoke 30s infinite;
+}
+
+#svg-smoke-4 {
+  left: 81%;
+  top: 83%;
+>>>>>>> background
 }
 
 @keyframes svg-smoke {
