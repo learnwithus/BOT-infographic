@@ -1,6 +1,14 @@
 $(window).on('load', function() {
   console.log('ready');
 
+  // $(window).resize(function() {
+  //   if ($("#infographic-container").height() > $("#background-image").height()) {
+  //     console.log('window taller than it is wide');
+  //     let backgroundHeight = $("#infographic-container").height();
+  //     $("#smoke-svg-1").css("bottom", backgroundHeight / 2);
+  //   }
+  // });
+
   // define objects containing the data for each site
   const vancouverData = {
     'surgeries': 87002,
