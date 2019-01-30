@@ -5,30 +5,31 @@
 	animation-timing-function: ease-in-out;
   width: 4vw;
 	path {
-		fill: rgba(	255, 188, 250, 1);
+    fill: #fff;
+		// fill: rgba(	255, 188, 250, 1);
 	}
 }
 
 #svg-smoke-1 {
-	left: 49%;
-	top: 78%;
+  left: 49%;
+  top: 71%;
 }
 
 #svg-smoke-2 {
-	left: 70%;
-  top: 70%;
+  left: 71%;
+  top: 66%;
 	animation: svg-smoke 20s infinite;
 }
 
 #svg-smoke-3 {
-	left: 38%;
-  top: 87%;
+  left: 37%;
+  top: 78%;
 	animation: svg-smoke 30s infinite;
 }
 
 #svg-smoke-4 {
-	left: 81%;
-	top: 83%;
+  left: 82%;
+  top: 76%;
 }
 
 @keyframes svg-smoke {
