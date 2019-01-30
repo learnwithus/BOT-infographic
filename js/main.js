@@ -1,6 +1,10 @@
 $(window).on('load', function() {
   console.log('ready');
 
+  $("#menu .menu-header").click(function() {
+    $("#menu").toggleClass('show');
+  });
+
   // define objects containing the data for each site
   const vancouverData = {
     'surgeries': 31657,
@@ -28,7 +32,7 @@ $(window).on('load', function() {
     'inpatientDays': 76243
   }
 
-  const richmondData = {
+  const coastalData = {
     'surgeries': 23673,
     'births': 2256,
     'residentialCareClients': 4653,
@@ -54,7 +58,7 @@ $(window).on('load', function() {
     countUps["surgeries-value"].update(data.surgeries);
     countUps["births-value"].update(data.births);
     countUps["inpatient-days-value"].update(data.inpatientDays);
-    countUps["mental-health-inpatient-visits-value"].update(data.mentalHealthInpatientVisits);
+    countUps["psychiatric-unit-admissions-value"].update(data.psychiatricUnitAdmissions);
     countUps["residential-care-clients-value"].update(data.residentialCareClients);
     countUps["home-support-clients-value"].update(data.homeSupportClients);
     countUps["home-support-visits-value"].update(data.homeSupportVisits);
@@ -62,6 +66,9 @@ $(window).on('load', function() {
     countUps["home-care-rehab-visits-value"].update(data.homeCareRehabVisits);
     countUps["emergency-department-visits-value"].update(data.emergencyDepartmentVisits);
   }
+
+  // initialize the site with the Vancouver data
+  switchData(vancouverData);
 
   // add click listeners to the site buttons
   $(".site-button").click( function() {

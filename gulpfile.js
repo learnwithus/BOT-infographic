@@ -25,7 +25,7 @@ function watchFiles() {
 
 function processSass() {
   return gulp
-    .src("./scss/**/*.scss")
+    .src("./scss/**/main.scss")
     .pipe(sass({ outputStyle: "expanded" }))
     .pipe(gulp.dest("./css/"))
     .pipe(browsersync.stream());

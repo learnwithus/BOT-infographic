@@ -1,7 +1,14 @@
 @import 'reset.scss';
+@import 'fonts.scss';
+
+$menu-all: #F15D3F;
+$menu-vancouver: #FF822E;
+$menu-richmond: #FFCF01;
+$menu-coastal: #AED630;
+$green: #697687;
 
 body {
-	font-family: sans-serif;
+	font-family: 'Proxima Nova', sans-serif;
   background-color: #c1d830;
 }
 
@@ -11,7 +18,6 @@ body {
   height: 100vh;
   max-height: 100vh;
   overflow: hidden;
-	// background-color: #FFF;
 
 	#background {
     position: absolute;
@@ -25,10 +31,6 @@ body {
       max-width: 100%;
       max-height: 99vh;
     }
-    // background-image: url("../assets/background.jpg");
-  	// background-size: contain;
-    // background-repeat: no-repeat;
-  	// background-position: center center;
 	}
 
 	.info-box {
@@ -47,9 +49,6 @@ body {
 	}
 
 	#site-buttons {
-		position: absolute;
-		bottom: 3rem;
-		left: 2rem;
 		font-size: 1.3rem;
 		font-weight: 600;
 
@@ -57,6 +56,57 @@ body {
 			margin: 0.2rem 0;
 		}
 	}
+}
+
+#menu {
+  position: fixed;
+  bottom: -7.4rem;
+  left: 5%;
+  background-color: #FFF;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 1rem;
+  width: 15rem;
+  transition: bottom 0.3s;
+  color: $green;
+  &.show {
+    bottom: 0;
+  }
+  img {
+    float: left;
+    width: 1.5rem;
+  }
+  h3 {
+    display: inline;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    color: #51C1AF;
+  }
+  .menu-header {
+    display: flex;
+    align-items: center;
+  }
+  li {
+    padding-left:  calc(2rem - 5px);
+    border-left-width: 5px;
+    border-left-style: solid;
+    transition: all 0.3s;
+    &:nth-child(1) {
+      border-left-color: $menu-all;
+    }
+  }
+  .menu-header,
+  li {
+    cursor: pointer;
+  }
+  li:hover {
+    padding-left: calc(2rem - 15px);
+    border-left-width: 15px;
+  }
+
 }
 
 #surgeries {
