@@ -5,6 +5,7 @@ $menu-all: #F15D3F;
 $menu-vancouver: #FF822E;
 $menu-richmond: #FFCF01;
 $menu-coastal: #AED630;
+
 $green: #697687;
 
 body {
@@ -29,7 +30,7 @@ body {
     text-align: center;
     #background-image-container {
       display: table;
-      background-color: blue;
+      background-color: $menu-vancouver;
       box-shadow:inset 0px 0px 0px 10px #d4dc5f;
     }
     #image {
@@ -44,7 +45,7 @@ body {
       width: 5%;
       height: 6.8%;
       transform: skewY(-29deg);
-      background-color: orange;
+      background-color: #FF822E;
       text {
         fill: #FFF;
       }
@@ -66,6 +67,21 @@ body {
 		border-radius: 1em;
 		box-shadow: 0 5px 15px #888888;
 	}
+  .home-info {
+    position: absolute;
+    right: 1em;
+    top: 1rem;
+    background: #FFF;
+		color: orangered;
+		text-align: center;
+		border-radius: 1em;
+		box-shadow: 0 5px 15px #888888;
+    .info-box {
+      position: static;
+      box-shadow: none;
+    }
+
+  }
 
 	#site-buttons {
 		font-size: 1.3rem;
@@ -166,25 +182,7 @@ body {
 	left: 65%;
 }
 
-#home-support-clients {
-	top: 10%;
-	left: 85%;
-}
 
-#home-support-visits {
-	top: 24%;
-	left: 85%;
-}
-
-#home-care-nursing-visits {
-	top: 38%;
-	left: 85%;
-}
-
-#home-care-rehab-visits {
-	top: 54%;
-	left: 85%;
-}
 
 #mental-health-inpatient-visits {
 	top: 32%;

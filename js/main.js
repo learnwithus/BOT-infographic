@@ -78,12 +78,18 @@ $(window).on('load', function() {
     switch($(this).data("site")) {
       case "vancouver":
         dataObject = vancouverData;
+        $("#background-image-container").css('background-color', "#FF822E");
+        $("#hospital-name").css('background-color', "#FF822E");
         break;
       case "richmond":
         dataObject = richmondData;
+        $("#background-image-container").css('background-color', "#FFCF01");
+        $("#hospital-name").css('background-color', "#FFCF01");
         break;
       case "coastal":
         dataObject = coastalData;
+        $("#background-image-container").css('background-color', "#AED630");
+        $("#hospital-name").css('background-color', "#AED630");
         break;
       default:
         break;
