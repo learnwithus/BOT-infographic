@@ -9,7 +9,7 @@ $green: #697687;
 
 body {
 	font-family: 'Proxima Nova', sans-serif;
-  background-color: #c1d830;
+  background-color: #d4dc5f;
 }
 
 #infographic-container {
@@ -27,7 +27,13 @@ body {
     transform: translate(-50%, -50%);
     overflow: hidden;
     text-align: center;
+    #background-image-container {
+      display: table;
+      background-color: blue;
+      box-shadow:inset 0px 0px 0px 10px #d4dc5f;
+    }
     #image {
+      display: block;
       max-width: 100%;
       max-height: 99vh;
     }
