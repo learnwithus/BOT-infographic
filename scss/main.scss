@@ -240,3 +240,33 @@ body {
 		transform: translateY(-2rem);
 	}
 }
+
+/* LINES */
+.line {
+   position: absolute;
+   height: 5px;
+   width: 50%;
+   background-color: #fff;
+}
+.line::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   height: 100%;
+   width: 0%;
+   background-color: #FFF;
+   /*animation parameters*/
+   animation: line-animation ease-in-out 1s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-delay: 5s;
+}
+.line.home {
+  transform: rotate(90deg);
+  width: 21%;
+  top: 55%;
+  left: 81%;
+}
