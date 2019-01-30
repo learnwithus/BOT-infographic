@@ -1,12 +1,13 @@
 @import 'reset.scss';
 @import 'fonts.scss';
+@import 'positioning.scss';
+@import 'menu.scss';
+@import 'animation.scss';
 
 $menu-all: #F15D3F;
 $menu-vancouver: #FF822E;
 $menu-richmond: #FFCF01;
 $menu-coastal: #AED630;
-
-$green: #697687;
 
 body {
 	font-family: 'Proxima Nova', sans-serif;
@@ -26,7 +27,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
     text-align: center;
     #background-image-container {
       display: table;
@@ -59,8 +59,10 @@ body {
 			font-weight: 700;
 		}
 		position: absolute;
-		max-width: 8rem;
-		padding: 1rem 2rem;
+		max-width: 8em;
+    width: fit-content;
+    font-size: 1rem;
+		padding: 1vw 2vw;
 		background: #FFF;
 		color: orangered;
 		text-align: center;
@@ -93,153 +95,6 @@ body {
 	}
 }
 
-#menu {
-  position: fixed;
-  bottom: -7.4rem;
-  left: 5%;
-  background-color: #FFF;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  padding: 1rem;
-  width: 15rem;
-  transition: bottom 0.3s;
-  color: $green;
-  &.show {
-    bottom: 0;
-    #icon-plus {
-      transform: rotate(45deg);
-    }
-  }
-  img {
-    float: left;
-    width: 1.5rem;
-  }
-  h3 {
-    display: inline;
-    margin-left: 0.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: 0.15rem;
-    color: #51C1AF;
-  }
-  .menu-header {
-    display: flex;
-    align-items: center;
-    #icon-plus {
-      position: absolute;
-      right: 1rem;
-      width: 1.3rem;
-      transition: all 0.3s;
-    }
-  }
-  li {
-    padding-left:  calc(2rem - 5px);
-    border-left-width: 5px;
-    border-left-style: solid;
-    transition: all 0.3s;
-    &:nth-child(1) {
-      border-left-color: $menu-all;
-    }
-    &:nth-child(2) {
-      border-left-color: $menu-vancouver;
-    }
-    &:nth-child(3) {
-      border-left-color: $menu-richmond;
-    }
-    &:nth-child(4) {
-      border-left-color: $menu-coastal;
-    }
-  }
-  .menu-header,
-  li {
-    cursor: pointer;
-  }
-  li:hover {
-    padding-left: calc(2rem - 15px);
-    border-left-width: 15px;
-  }
-
-}
-
-#surgeries {
-	top: 21%;
-	left: 11%;
-}
-
-#births {
-	top: 13%;
-	left: 52%;
-}
-
-#inpatient-days {
-	top: 70%;
-	left: 3%;
-}
-
-#residential-care-clients {
-	top: 10%;
-	left: 65%;
-}
-
-
-
-#mental-health-inpatient-visits {
-	top: 32%;
-	left: 46%;
-}
-
-#emergency-department-visits {
-	top: 58%;
-	left: 33%;
-}
-
-.svg-smoke {
-	position: absolute;
-	animation: svg-smoke 10s infinite;
-	animation-timing-function: ease-in-out;
-  width: 4vw;
-	path {
-		fill: rgba(	255, 188, 250, 1);
-	}
-}
-
-#svg-smoke-1 {
-	left: 49%;
-	top: 78%;
-}
-
-#svg-smoke-2 {
-	left: 70%;
-  top: 70%;
-	animation: svg-smoke 20s infinite;
-}
-
-#svg-smoke-3 {
-	left: 38%;
-  top: 87%;
-	animation: svg-smoke 30s infinite;
-}
-
-#svg-smoke-4 {
-	left: 81%;
-	top: 83%;
-}
-
-@keyframes svg-smoke {
-	0% {
-		opacity: 0;
-	}
-
-	50% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateY(-2rem);
-	}
-}
 
 /* LINES */
 .line {
