@@ -133,6 +133,17 @@ body {
    animation-fill-mode: forwards;
    animation-delay: 5s;
 }
+.line::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -0.33em;
+   right: 0;
+   height: 1em;
+   width: 1em;
+   background-color: #FFF;
+  border-radius: 1em;
+}
 .line.home {
   transform: rotate(90deg);
   width: 21%;
