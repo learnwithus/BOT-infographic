@@ -9,6 +9,10 @@ $menu-vancouver: #FF822E;
 $menu-richmond: #FFCF01;
 $menu-coastal: #AED630;
 
+html {
+  font-size: 12pt;
+}
+
 body {
 	font-family: 'Proxima Nova', sans-serif;
   background-color: #d4dc5f;
@@ -28,9 +32,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    #hospital-colour {
+      position: absolute;
+      z-index: -1;
+      top: 1%;
+      left: 1%;
+      width: 90%;
+      height: 80%;
+      background-color: $menu-all;
+    }
     #background-image-container {
       display: table;
-      background-color: $menu-vancouver;
       box-shadow:inset 0px 0px 0px 10px #d4dc5f;
     }
     #image {
@@ -126,4 +138,10 @@ body {
   width: 21%;
   top: 55%;
   left: 81%;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 10pt;
+  }
 }
