@@ -5,7 +5,6 @@
   <title>BOT Infographic</title>
   <link rel="stylesheet" href="css/main.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="./js/countup.min.js"></script>
 </head>
 
 <body>
@@ -15,10 +14,8 @@
         <img id="image" src="./assets/background.png" alt="background image" />
       </div>
 
-      <div id="hospital-name">
-        <svg viewBox="0 0 34 27">
-          <text y="18">VGH</text>
-        </svg>
+      <div id="hospital-name-container">
+        <h3>VCH</h3>
       </div>
 
       <div class="info-box" id="surgeries">
@@ -126,7 +123,7 @@
       </ul>
     </div>
   </div>
-  <script src="./js/main.js"></script>
+  <script data-main="js/main" src="js/require.js"></script>
 </body>
 
 </html>
