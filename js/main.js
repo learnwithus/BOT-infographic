@@ -1,8 +1,10 @@
 // require other js modulesgit s
-requirejs(["data", "countup.min"], function(data, CountUp) {
+requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
   $(window).on('load', function() {
-    console.log('ready');
+    // run fitText to make the hospital name responsive
+    $("#hospital-name-container").fitText(0.205);
 
+    // toggle the menu on click
     $("#menu .menu-header").click(function() {
       $("#menu").toggleClass('show');
     });
@@ -41,22 +43,47 @@ requirejs(["data", "countup.min"], function(data, CountUp) {
         case "all":
           dataObject = allData;
           $("#background-image-container").css('background-color', "#FF822E");
-          $("#hospital-name-container").css('background-color', "#FF822E").text("VCH").css('font-size', "2.45vw");
+          $("#hospital-name-container").css('background-color', "#FF822E").text("VCH").fitText(0.205);
           break;
         case "vancouver":
           dataObject = vancouverData;
           $("#background-image-container").css('background-color', "#FF822E");
-          $("#hospital-name-container").css('background-color', "#FF822E").text("VANCOUVER").css("font-size", "0.82vw");
+          $("#hospital-name-container").css('background-color', "#FF822E").text("VANCOUVER").fitText(0.615);
           break;
         case "richmond":
           dataObject = richmondData;
           $("#background-image-container").css('background-color', "#FFCF01");
-          $("#hospital-name-container").css('background-color', "#FFCF01").text("RICHMOND").css("font-size", "0.92vw");
+          $("#hospital-name-container").css('background-color', "#FFCF01").text("RICHMOND").fitText(0.54);
           break;
         case "coastal":
           dataObject = coastalData;
           $("#background-image-container").css('background-color', "#AED630");
-          $("#hospital-name-container").css('background-color', "#AED630").text("COASTAL").css("font-size", "1.14vw");
+          $("#hospital-name-container").css('background-color', "#AED630").text("COASTAL").fitText(0.44);
+          break;
+        case "north-vancouver":
+          dataObject = northVancouverData;
+          $("#background-image-container").css('background-color', "#739849");
+          $("#hospital-name-container").css('background-color', "#739849").text("NORTH VANCOUVER").fitText(0.65);
+          break;
+        case "squamish":
+          dataObject = squamishData;
+          $("#background-image-container").css('background-color', "#44C8F5");
+          $("#hospital-name-container").css('background-color', "#44C8F5").text("SQUAMISH").fitText(0.52);
+          break;
+        case "powell-river":
+          dataObject = powellRiverData;
+          $("#background-image-container").css('background-color', "#0078AE");
+          $("#hospital-name-container").css('background-color', "#0078AE").text("POWELL RIVER").fitText(0.52);
+          break;
+        case "sechelt":
+          dataObject = secheltData;
+          $("#background-image-container").css('background-color', "#904799");
+          $("#hospital-name-container").css('background-color', "#904799").text("SECHELT").fitText(0.42);
+          break;
+        case "whistler-pemberton":
+          dataObject = whistlerPembertonData;
+          $("#background-image-container").css('background-color', "#F46EA5");
+          $("#hospital-name-container").css('background-color', "#F46EA5").text("WHISTLER & PEMBERTON").fitText(0.6);
           break;
         default:
           break;
