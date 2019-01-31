@@ -1,4 +1,4 @@
-// require other js modules
+// require other js modulesgit s
 requirejs(["data", "countup.min"], function(data, CountUp) {
   $(window).on('load', function() {
     console.log('ready');
@@ -51,7 +51,7 @@ requirejs(["data", "countup.min"], function(data, CountUp) {
         case "richmond":
           dataObject = richmondData;
           $("#background-image-container").css('background-color', "#FFCF01");
-          $("#hospital-name-container").css('background-color', "#FFCF01");
+          $("#hospital-name-container").css('background-color', "#FFCF01").text("RICHMOND").css("font-size", "0.92vw");;
           break;
         case "coastal":
           dataObject = coastalData;
