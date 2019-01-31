@@ -2,11 +2,16 @@ $menu-all: #F15D3F;
 $menu-vancouver: #FF822E;
 $menu-richmond: #FFCF01;
 $menu-coastal: #AED630;
+$menu-north-vancouver: #739849;
+$menu-squamish: #44C8F5;
+$menu-powell-river: #0078AE;
+$menu-sechelt: #904799;
+$menu-whistler-pemberton: #F46EA5;
 $green: #697687;
 
 #menu {
   position: fixed;
-  bottom: -7.4rem;
+  bottom: -14.8em;
   left: 5%;
   background-color: #FFF;
   border-top-left-radius: 1rem;
@@ -60,6 +65,21 @@ $green: #697687;
     }
     &:nth-child(4) {
       border-left-color: $menu-coastal;
+    }
+    &:nth-child(5) {
+      border-left-color: $menu-north-vancouver;
+    }
+    &:nth-child(6) {
+      border-left-color: $menu-squamish;
+    }
+    &:nth-child(7) {
+      border-left-color: $menu-powell-river;
+    }
+    &:nth-child(8) {
+      border-left-color: $menu-sechelt;
+    }
+    &:nth-child(9) {
+      border-left-color: $menu-whistler-pemberton;
     }
   }
   .menu-header,
