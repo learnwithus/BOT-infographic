@@ -27,7 +27,7 @@ body {
 
 	#background {
     position: absolute;
-    width: fit-content;
+    display: table;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -74,9 +74,9 @@ body {
 		}
 		position: absolute;
 		max-width: 8em;
-    width: fit-content;
+    display: table;
     font-size: 1rem;
-		padding: 1vw 2vw;
+		padding: 1em 2em;
 		background: #FFF;
 		color: orangered;
 		text-align: center;
