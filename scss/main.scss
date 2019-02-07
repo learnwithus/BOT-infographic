@@ -25,6 +25,10 @@ body {
   max-height: 100vh;
   overflow: hidden;
 
+  hr {
+    border-color: #eee;
+  }
+
 	#background {
     position: absolute;
     display: table;
