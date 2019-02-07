@@ -9,6 +9,10 @@ $menu-vancouver: #FF822E;
 $menu-richmond: #FFCF01;
 $menu-coastal: #AED630;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 12pt;
 }
@@ -79,7 +83,9 @@ body {
 			font-weight: 700;
 		}
 		position: absolute;
-		max-width: 8em;
+    margin: auto;
+    min-width: 11em;
+		max-width: 12em;
     display: table;
     font-size: 1rem;
 		padding: 1em 2em;
@@ -159,6 +165,11 @@ body {
 
 @media (max-width: 1024px) {
   html {
-    font-size: 10pt;
+    font-size: 9pt;
+  }
+  #infographic-container {
+    .info-box {
+      padding: 1em 0.4em;
+    }
   }
 }

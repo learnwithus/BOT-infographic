@@ -11,15 +11,16 @@ $green: #697687;
 
 #menu {
   position: fixed;
-  bottom: -14.9em;
+  bottom: -14.3em;
+  width: 20em;
   left: 5%;
+  padding: 1em;
+  padding-bottom: 0.3em;
   background-color: #FFF;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  padding: 1rem;
-  width: 18rem;
-  transition: bottom 0.3s;
   color: $green;
+  transition: bottom 0.3s;
   animation: pulse 3s infinite;
   &.show {
     bottom: 0;
