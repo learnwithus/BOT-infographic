@@ -1,5 +1,11 @@
 <?php
+/* ---
+This is the WordPress template file used to display the infographic on BOT.
+After updating this file, commit it to the repo for SCM purposes. To use it in
+WordPress, copy this file to the /wp-content/themes/vch/ directory.
+--- */
 
+/* The below line defines the name of the template in WordPress */
 /* Template Name: Infographic */
 
 ?>
