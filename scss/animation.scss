@@ -97,3 +97,16 @@
     top: -15em;
   }
 }
+
+// keyframes for the menu pulse animation
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(100, 100, 240, 0.4);
+  }
+  50% {
+      box-shadow: 0 0 0 10px rgba(100, 100, 240, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(100, 100, 240, 0);
+  }
+}

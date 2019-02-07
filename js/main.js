@@ -42,8 +42,8 @@ requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
       switch($(this).data("site")) {
         case "all":
           dataObject = allData;
-          $("#hospital-colour").css('background-color', "#FF822E");
-          $("#hospital-name-container").css('background-color', "#FF822E").text("VCH").fitText(0.205);
+          $("#hospital-colour").css('background-color', "#F15D3F");
+          $("#hospital-name-container").css('background-color', "#F15D3F").text("VCH").fitText(0.205);
           break;
         case "vancouver":
           dataObject = vancouverData;

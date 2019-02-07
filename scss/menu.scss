@@ -20,6 +20,7 @@ $green: #697687;
   width: 18rem;
   transition: bottom 0.3s;
   color: $green;
+  animation: pulse 3s infinite;
   &.show {
     bottom: 0;
     #icon-plus {
