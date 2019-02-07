@@ -2,7 +2,7 @@
 This repo contains the code for the infographic used in BOT.
 
 ## Development
-The infographic uses HTML, jQuery (from a CDN in `<head>`), Sass, and [FitText](https://github.com/davatron5000/FitText.js). [Gulp](https://github.com/gulpjs/gulp) is used to make development a breeze.
+The infographic uses HTML, jQuery (from a CDN in `<head>`), Sass, and [FitText](https://github.com/davatron5000/FitText.js). [Gulp](https://github.com/gulpjs/gulp) is used to make development a breeze. [RequireJS](https://requirejs.org/) is used for JavaScript file loading.
 
 To develop locally:
 1. Run `npm i` to install local dependencies, including `gulp`
