@@ -3,10 +3,9 @@
 	position: absolute;
 	animation: svg-smoke 10s infinite;
 	animation-timing-function: ease-in-out;
-  width: 4vw;
+  width: 4%;
 	path {
     fill: #fff;
-		// fill: rgba(	255, 188, 250, 1);
 	}
 }
 
@@ -49,9 +48,9 @@
 
 #water-splash {
   position: absolute;
-  left: 61%;
-  top: 47.5%;
-  width: 3vw;
+  left: 61.2%;
+  top: 48%;
+  width: 2.5%;
   animation: water-splash 5s infinite;
 }
 
@@ -77,7 +76,7 @@
   position: absolute;
   top: 0;
   left: 25%;
-  width: 10vw;
+  width: 10%;
   animation: helicopter 20s infinite;
 }
 
