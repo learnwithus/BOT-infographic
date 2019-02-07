@@ -1,7 +1,6 @@
 // require other js modules
 requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
 	$(function() {
-		console.log('$function');
 		// run fitText to make the hospital name responsive
 		$("#hospital-name-container").fitText(0.205);
 
