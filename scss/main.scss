@@ -64,13 +64,12 @@ body {
       display: flex;
       position: absolute;
       align-items: center;
-      left: 29.8%;
-      top: 19%;
-      width: 5%;
-      max-width: 5%;
-      height: 6.8%;
+      left: 26.1%;
+      top: 12.4%;
+      width: 7.5%;
+      height: 8.8%;
       font-size: 2.45vw;
-      transform: skewY(-29deg);
+      transform: skewY(-30.4deg);
       background-color: #F15D3F;
       color: #FFF;
       font-weight: bold;
@@ -81,6 +80,8 @@ body {
 		h3 {
 			font-size: 2em;
 			font-weight: 700;
+      font-family: monospace;
+      color: #F15D3F;
 		}
 		position: absolute;
     margin: auto;
@@ -90,7 +91,7 @@ body {
     font-size: 1rem;
 		padding: 1em 2em;
 		background: #FFF;
-		color: orangered;
+		color: #222;
 		text-align: center;
 		border-radius: 1em;
 		box-shadow: 0 5px 15px #888888;

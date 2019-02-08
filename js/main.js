@@ -14,7 +14,7 @@ requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
 		// iterate through the value elements and create a CountUp for them
 		$(".info-box h3").each(function() {
 			let id = this.id;
-			countUps[id] = new CountUp(id, 0, 0, 0, 2.5);
+			countUps[id] = new CountUp(id, 0, 0, 0, 2);
 		});
 
 		// switch all the data to the data for the requested site
@@ -44,46 +44,55 @@ requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
 					dataObject = allData;
 					$("#hospital-colour").css('background-color', "#F15D3F");
 					$("#hospital-name-container").css('background-color', "#F15D3F").text("VCH").fitText(0.205);
+					$(".info-box h3").css('color', "#F15D3F");
 					break;
 				case "vancouver":
 					dataObject = vancouverData;
 					$("#hospital-colour").css('background-color', "#FF822E");
 					$("#hospital-name-container").css('background-color', "#FF822E").text("VANCOUVER").fitText(0.615);
+          $(".info-box h3").css('color', "#FF822E");
 					break;
 				case "richmond":
 					dataObject = richmondData;
 					$("#hospital-colour").css('background-color', "#FFCF01");
 					$("#hospital-name-container").css('background-color', "#FFCF01").text("RICHMOND").fitText(0.54);
+          $(".info-box h3").css('color', "#FFCF01");
 					break;
 				case "coastal":
 					dataObject = coastalData;
 					$("#hospital-colour").css('background-color', "#AED630");
 					$("#hospital-name-container").css('background-color', "#AED630").text("COASTAL").fitText(0.44);
+          $(".info-box h3").css('color', "#AED630");
 					break;
 				case "north-vancouver":
 					dataObject = northVancouverData;
 					$("#hospital-colour").css('background-color', "#739849");
 					$("#hospital-name-container").css('background-color', "#739849").text("NORTH VANCOUVER").fitText(0.65);
+          $(".info-box h3").css('color', "#739849");
 					break;
 				case "squamish":
 					dataObject = squamishData;
 					$("#hospital-colour").css('background-color', "#44C8F5");
 					$("#hospital-name-container").css('background-color', "#44C8F5").text("SQUAMISH").fitText(0.52);
+          $(".info-box h3").css('color', "#44C8F5");
 					break;
 				case "powell-river":
 					dataObject = powellRiverData;
 					$("#hospital-colour").css('background-color', "#0078AE");
 					$("#hospital-name-container").css('background-color', "#0078AE").text("POWELL RIVER").fitText(0.52);
-					break;
+          $(".info-box h3").css('color', "#0078AE");
+          break;
 				case "sechelt":
 					dataObject = secheltData;
 					$("#hospital-colour").css('background-color', "#904799");
 					$("#hospital-name-container").css('background-color', "#904799").text("SECHELT").fitText(0.42);
-					break;
+          $(".info-box h3").css('color', "#904799");
+          break;
 				case "whistler-pemberton":
 					dataObject = whistlerPembertonData;
 					$("#hospital-colour").css('background-color', "#F46EA5");
 					$("#hospital-name-container").css('background-color', "#F46EA5").text("WHISTLER & PEMBERTON").fitText(0.6);
+          $(".info-box h3").css('color', "#F46EA5");
 					break;
 				default:
 					break;
