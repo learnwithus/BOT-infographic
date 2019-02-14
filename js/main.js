@@ -29,6 +29,13 @@ requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
 			countUps["home-care-nursing-visits-value"].update(data.homeCareNursingVisits);
 			countUps["home-care-rehab-visits-value"].update(data.homeCareRehabVisits);
 			countUps["emergency-department-visits-value"].update(data.emergencyDepartmentVisits);
+      for (var infobox in countUps) {
+        if (countUps[infobox].endVal == 0) {
+          $("#" + infobox).parent().fadeOut();
+        } else {
+          $("#" + infobox).parent().fadeIn();
+        }
+      }
 		}
 
 		// initialize the site with the Vancouver data
@@ -37,6 +44,7 @@ requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
 		// add click listeners to the site buttons
 		$(".site-button").click(function() {
 			let dataObject; // initialize a variable to hold the site's data
+      $("#home-support-visits-hr").fadeIn(); // show the home support visits <hr>
 
 			// choose which data object to use for the counters
 			switch ($(this).data("site")) {
@@ -93,13 +101,14 @@ requirejs(["data", "countup.min", "jquery.fittext"], function(data, CountUp) {
 					$("#hospital-colour").css('background-color', "#F46EA5");
 					$("#hospital-name-container").css('background-color', "#F46EA5").text("WHISTLER & PEMBERTON").fitText(0.6);
           $(".info-box h3").css('color', "#F46EA5");
+          $("#home-support-visits-hr").fadeOut(); // hide the extra <hr> when switching to whistler/pemberton
 					break;
 				default:
 					break;
 			}
 
 			// switch the data in the counters to the decided dataset
-			switchData(dataObject)
+			switchData(dataObject);
 		});
 	});
 });
