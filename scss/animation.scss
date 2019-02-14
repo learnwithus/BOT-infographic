@@ -31,6 +31,12 @@
   top: 80%;
 }
 
+#svg-smoke-5 {
+  left: 92%;
+  top: 56%;
+  animation: svg-smoke 15s infinite;
+}
+
 @keyframes svg-smoke {
 	0% {
 		opacity: 0;
