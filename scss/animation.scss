@@ -3,33 +3,38 @@
 	position: absolute;
 	animation: svg-smoke 10s infinite;
 	animation-timing-function: ease-in-out;
-  width: 4vw;
+  width: 4%;
 	path {
     fill: #fff;
-		// fill: rgba(	255, 188, 250, 1);
 	}
 }
 
 #svg-smoke-1 {
-  left: 49%;
-  top: 71%;
+  left: 46%;
+  top: 69%;
 }
 
 #svg-smoke-2 {
-  left: 71%;
-  top: 66%;
+  left: 67%;
+  top: 64%;
 	animation: svg-smoke 20s infinite;
 }
 
 #svg-smoke-3 {
-  left: 37%;
-  top: 78%;
+  left: 34.5%;
+  top: 72%;
 	animation: svg-smoke 30s infinite;
 }
 
 #svg-smoke-4 {
-  left: 82%;
-  top: 76%;
+  left: 74%;
+  top: 80%;
+}
+
+#svg-smoke-5 {
+  left: 92%;
+  top: 56%;
+  animation: svg-smoke 15s infinite;
 }
 
 @keyframes svg-smoke {
@@ -49,9 +54,9 @@
 
 #water-splash {
   position: absolute;
-  left: 61%;
-  top: 47.5%;
-  width: 3vw;
+  left: 57.9%;
+  top: 46.3%;
+  width: 2.5%;
   animation: water-splash 5s infinite;
 }
 
@@ -76,8 +81,8 @@
 #helicopter {
   position: absolute;
   top: 0;
-  left: 25%;
-  width: 10vw;
+  left: 23%;
+  width: 10%;
   animation: helicopter 20s infinite;
 }
 
@@ -96,5 +101,18 @@
   }
   100% {
     top: -15em;
+  }
+}
+
+// keyframes for the menu pulse animation
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(100, 100, 240, 0.4);
+  }
+  50% {
+      box-shadow: 0 0 0 10px rgba(100, 100, 240, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(100, 100, 240, 0);
   }
 }

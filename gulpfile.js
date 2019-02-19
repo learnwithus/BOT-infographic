@@ -31,8 +31,16 @@ function processSass() {
     .pipe(browsersync.stream());
 }
 
+function build() {
+  return gulp
+    .src("./scss/**/main.scss")
+    .pipe(sass({ outputStyle: "expanded" }))
+    .pipe(gulp.dest("./css/"));
+}
+
 const watch = gulp.parallel(watchFiles, browserSync);
 
 exports.sass = processSass;
 exports.watch = watch;
+exports.build = build;
 exports.default = watch;

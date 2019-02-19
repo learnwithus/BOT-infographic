@@ -1,6 +1,6 @@
 @import 'reset.scss';
 @import 'fonts.scss';
-@import 'positioning.scss';
+@import 'stats-positioning.scss';
 @import 'menu.scss';
 @import 'animation.scss';
 
@@ -8,6 +8,14 @@ $menu-all: #F15D3F;
 $menu-vancouver: #FF822E;
 $menu-richmond: #FFCF01;
 $menu-coastal: #AED630;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12pt;
+}
 
 body {
 	font-family: 'Proxima Nova', sans-serif;
@@ -21,16 +29,41 @@ body {
   max-height: 100vh;
   overflow: hidden;
 
+  hr {
+    border-color: #eee;
+  }
+
 	#background {
     position: absolute;
+    display: table;
     width: fit-content;
+    width: -moz-fit-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    #a-look-inside-vch {
+      position: absolute;
+      left: 1em;
+      top: 1em;
+      font-family: neue-haas-grotesk-display, sans-serif;
+      text-align: left;
+      font-size: 1.3rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    #hospital-colour {
+      position: absolute;
+      z-index: -1;
+      top: 1%;
+      left: 1%;
+      width: 90%;
+      height: 80%;
+      background-color: $menu-all;
+    }
     #background-image-container {
       display: table;
-      background-color: $menu-vancouver;
       box-shadow:inset 0px 0px 0px 10px #d4dc5f;
     }
     #image {
@@ -42,14 +75,13 @@ body {
       display: flex;
       position: absolute;
       align-items: center;
-      left: 29.8%;
-      top: 19%;
-      width: 5%;
-      max-width: 5%;
-      height: 6.8%;
+      left: 26.1%;
+      top: 12.4%;
+      width: 7.5%;
+      height: 8.8%;
       font-size: 2.45vw;
-      transform: skewY(-29deg);
-      background-color: #FF822E;
+      transform: skewY(-30.4deg);
+      background-color: #F15D3F;
       color: #FFF;
       font-weight: bold;
     }
@@ -59,14 +91,18 @@ body {
 		h3 {
 			font-size: 2em;
 			font-weight: 700;
+      font-family: monospace;
+      color: #F15D3F;
 		}
 		position: absolute;
-		max-width: 8em;
-    width: fit-content;
+    margin: auto;
+    min-width: 11em;
+		max-width: 12em;
+    display: table;
     font-size: 1rem;
-		padding: 1vw 2vw;
+		padding: 1em 2em;
 		background: #FFF;
-		color: orangered;
+		color: #222;
 		text-align: center;
 		border-radius: 1em;
 		box-shadow: 0 5px 15px #888888;
@@ -75,6 +111,7 @@ body {
     position: absolute;
     right: 1em;
     top: 1rem;
+    min-width: 11em;
     background: #FFF;
 		color: orangered;
 		text-align: center;
@@ -121,9 +158,31 @@ body {
    animation-fill-mode: forwards;
    animation-delay: 5s;
 }
+.line::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -0.33em;
+   right: 0;
+   height: 1em;
+   width: 1em;
+   background-color: #FFF;
+  border-radius: 1em;
+}
 .line.home {
   transform: rotate(90deg);
   width: 21%;
   top: 55%;
   left: 81%;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 9pt;
+  }
+  #infographic-container {
+    .info-box {
+      padding: 1em 0.4em;
+    }
+  }
 }

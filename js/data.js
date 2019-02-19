@@ -1,3 +1,8 @@
+/*
+  This file is loaded by RequireJS and includes the JSON used to populate the
+  data in the infographics.
+*/
+
 const allData = {
   'surgeries': 87002,
   'births': 12591,
@@ -11,7 +16,6 @@ const allData = {
   'inpatientDays': 596241
 };
 
-// define objects containing the data for each site
 const vancouverData = {
   'surgeries': 31657,
   'births': 6122,
@@ -49,4 +53,69 @@ const coastalData = {
   'homeCareRehabVisits': 11670,
   'emergencyDepartmentVisits': 141665,
   'inpatientDays': 119561
+}
+
+const northVancouverData = {
+  'inpatientDays': 85930,
+  'emergencyDepartmentVisits': 64572,
+  'residentialCareClients': 3190,
+  'psychiatricUnitAdmissions': 656,
+  'homeSupportClients': 1722,
+  'homeSupportVisits': 333975,
+  'homeCareNursingVisits': 32089,
+  'homeCareRehabVisits': 6419,
+  'births': 1458,
+  'surgeries': 16518
+}
+
+const squamishData = {
+  'inpatientDays': 5120,
+  'emergencyDepartmentVisits': 15514,
+  'residentialCareClients': 27,
+  'psychiatricUnitAdmissions': 0,
+  'homeSupportClients': 123,
+  'homeSupportVisits': 20040,
+  'homeCareNursingVisits': 1883,
+  'homeCareRehabVisits': 2069,
+  'births': 291,
+  'surgeries': 2224
+}
+
+const powellRiverData = {
+  'inpatientDays': 10419,
+  'emergencyDepartmentVisits': 18019,
+  'residentialCareClients': 642,
+  'psychiatricUnitAdmissions': 163,
+  'homeSupportClients': 379,
+  'homeSupportVisits': 117336,
+  'homeCareNursingVisits': 3876,
+  'homeCareRehabVisits': 1224,
+  'births': 154,
+  'surgeries': 1496
+}
+
+const secheltData = {
+  'inpatientDays': 16156,
+  'emergencyDepartmentVisits': 16957,
+  'residentialCareClients': 57,
+  'psychiatricUnitAdmissions': 194,
+  'homeSupportClients': 297,
+  'homeSupportVisits': 67912,
+  'homeCareNursingVisits': 3451,
+  'homeCareRehabVisits': 708,
+  'births': 78,
+  'surgeries': 2309
+}
+
+const whistlerPembertonData = {
+  'inpatientDays': 0,
+  'emergencyDepartmentVisits': 26603,
+  'residentialCareClients': 0,
+  'psychiatricUnitAdmissions': 0,
+  'homeSupportClients': 51,
+  'homeSupportVisits': 0,
+  'homeCareNursingVisits': 2243,
+  'homeCareRehabVisits': 207,
+  'births': 143,
+  'surgeries': 0
 }
