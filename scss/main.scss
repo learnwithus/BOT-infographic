@@ -42,6 +42,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    #a-look-inside-vch {
+      position: absolute;
+      left: 1em;
+      top: 1em;
+      font-family: neue-haas-grotesk-display, sans-serif;
+      text-align: left;
+      font-size: 1.3rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
     #hospital-colour {
       position: absolute;
       z-index: -1;
