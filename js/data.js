@@ -4,55 +4,55 @@
 */
 
 const allData = {
-  'surgeries': 87002,
-  'births': 12591,
-  'residentialCareClients': 17312,
-  'psychiatricUnitAdmissions': 4970,
-  'homeSupportClients': 15305,
-  'homeSupportVisits': 2951441,
-  'homeCareNursingVisits': 251016,
-  'homeCareRehabVisits': 61994,
-  'emergencyDepartmentVisits': 460441,
-  'inpatientDays': 596241
+  'surgeries': 62332,
+  'births': 10466,
+  'residentialCareClients': 9606,
+  'psychiatricUnitAdmissions': 4185,
+  'homeSupportClients': 11509,
+  'homeSupportVisits': 2394547,
+  'homeCareNursingVisits': 203460,
+  'homeCareRehabVisits': 53438,
+  'emergencyDepartmentVisits': 318776,
+  'inpatientDays': 524946
 };
 
 const vancouverData = {
-  'surgeries': 31657,
-  'births': 6122,
-  'residentialCareClients': 6838,
-  'psychiatricUnitAdmissions': 2333,
-  'homeSupportClients': 7776,
-  'homeSupportVisits': 1508601,
-  'homeCareNursingVisits': 126734,
-  'homeCareRehabVisits': 31077,
+  'surgeries': 31651,
+  'births': 6120,
+  'residentialCareClients': 5700,
+  'psychiatricUnitAdmissions': 2440,
+  'homeSupportClients': 6939,
+  'homeSupportVisits': 1508597,
+  'homeCareNursingVisits': 124050,
+  'homeCareRehabVisits': 32132,
   'emergencyDepartmentVisits': 119435,
-  'inpatientDays': 282812
+  'inpatientDays': 318021
 }
 
 const richmondData = {
-  'surgeries': 9125,
+  'surgeries': 9126,
   'births': 2089,
-  'residentialCareClients': 1905,
-  'psychiatricUnitAdmissions': 611,
-  'homeSupportClients': 2031,
-  'homeSupportVisits': 316350,
-  'homeCareNursingVisits': 29276,
+  'residentialCareClients': 1344,
+  'psychiatricUnitAdmissions': 612,
+  'homeSupportClients': 1833,
+  'homeSupportVisits': 316347,
+  'homeCareNursingVisits': 28526,
   'homeCareRehabVisits': 8620,
   'emergencyDepartmentVisits': 57676,
-  'inpatientDays': 76243
+  'inpatientDays': 80865
 }
 
 const coastalData = {
-  'surgeries': 23673,
-  'births': 2256,
-  'residentialCareClients': 4653,
-  'psychiatricUnitAdmissions': 1013,
-  'homeSupportClients': 2926,
-  'homeSupportVisits': 587227,
-  'homeCareNursingVisits': 51464,
-  'homeCareRehabVisits': 11670,
+  'surgeries': 21555,
+  'births': 2257,
+  'residentialCareClients': 2860,
+  'psychiatricUnitAdmissions': 1133,
+  'homeSupportClients': 2737,
+  'homeSupportVisits': 569603,
+  'homeCareNursingVisits': 50884,
+  'homeCareRehabVisits': 11686,
   'emergencyDepartmentVisits': 141665,
-  'inpatientDays': 119561
+  'inpatientDays': 126060
 }
 
 const northVancouverData = {
